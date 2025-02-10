@@ -3,7 +3,7 @@
 using namespace std;
 
 class Student{
-    
+
     private:
         string stream = "ECE";
 
@@ -32,18 +32,21 @@ class Student{
 };
 
 int main(){
-    Student s1 , s2; // s1 is the reference variables
+    Student s1 , s2; // s1 is the object
 
+    // first object
     s1.studentName = "Tushar Sil";
     s1.semester = 5;
     s1.subjects = {"EM Waves," , "Digital Signal Processing," , "Nano Electronics," , "Digital Communication"};
     
+    // second object
     s2.studentName = "Saptashri Nandi";
     s2.semester = 3;
     s2.subjects = {"Digital System Design," , "Data Structure," , "Signal System," , "Network Theory"};
     
-    s1.displayStdentDetails();
-    s2.displayStdentDetails();
+    s1.displayStdentDetails(); // display first object
+
+    s2.displayStdentDetails(); // display second object 
 
     return 0;
 }
